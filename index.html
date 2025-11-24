@@ -11,12 +11,17 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      rel="stylesheet"
+    />
     <title>Eltayeb Ibrahim - FullStack Developer</title>
   </head>
+
   <body>
     <!-- First Screen -->
     <div class="h-screen bg-linear-to-b from-indigo-50 to-blue-200">
-      <!-- Navbar -->
+      <!-- Navbar Start-->
       <div class="bg-white h-20 flex justify-center items-center sticky z-10">
         <nav class="container mx-auto flex justify-between items-center">
           <h3 class="text-2xl">ELTAYEB's PORTFOLIO</h3>
@@ -44,7 +49,7 @@
           <!-- Hamburger -->
           <div
             id="hamburger"
-            class="flex flex-col gap-1 md:hidden cursor-pointer group transition duration-150 z-20"
+            class="flex flex-col gap-1 md:hidden cursor-pointer group transition duration-150 z-30"
           >
             <div class="h-0.5 w-5 bg-gray-600 group-hover:bg-gray-400"></div>
             <div class="h-0.5 w-5 bg-gray-600 group-hover:bg-gray-400"></div>
@@ -52,7 +57,8 @@
           </div>
           <!-- Drop Down Menu -->
           <div
-            class="absolute top-0 left-0 z-10 bg-indigo-400 w-full h-72 flex justify-center items-center rounded-b-2xl"
+            id="dropdown"
+            class="absolute hidden top-0 left-0 z-20 bg-indigo-900 w-full h-72 flex justify-center items-center rounded-b-2xl"
           >
             <ul class="flex flex-col gap-3">
               <li class="text-gray-200 hover:text-gray-50 font-semibold">
@@ -84,6 +90,53 @@
           </div>
         </nav>
       </div>
+      <!-- Navbar End-->
+
+      <!-- Hero Start -->
+      <div class="relative h-[calc(100vh-80px)] w-full">
+        <!-- Left Text -->
+        <div class="absolute top-1/4 left-12 md:left-24 z-10">
+          <span class="text-2xl md:text-4xl font-bold text-gray-700">
+            FullStack Developer
+          </span>
+          <p
+            id="auto-text"
+            class="text-xl md:text-2xl text-red-400 font-bold mt-2"
+          ></p>
+        </div>
+
+        <!-- Image at bottom left -->
+        <div
+          class="absolute bottom-0 left-3/12 h-[600px] w-[600px] bg-linear-to-b from-indigo-900 to-indigo-200 rounded-full overflow-hidden z-0"
+        >
+          <img
+            class="w-[600px] absolute bottom-0"
+            src="./images/Eltayeb.png"
+            alt="Eltayeb"
+          />
+        </div>
+
+        <!-- Right Element -->
+        <div
+          class="absolute top-1/3 right-12 w-[400px] bg-gray-100 rounded-lg flex flex-col gap-3 p-3"
+        >
+          <h1 class="text-2xl font-bold">Hi, I'm Eltayeb</h1>
+          <p class="text-gray-500">
+            Full Stack Developer focused on backend, building scalable web apps
+            with Node.js, Express.js, MySQL, and Vue.js. Passionate about clean
+            code, performance, and user-centered solutions.
+          </p>
+          <a
+            class="bg-indigo-800 text-white w-max px-3 py-2 rounded-lg hover:bg-indigo-600"
+            href="#contact"
+            >Hire Me</a
+          >
+        </div>
+      </div>
+
+      <!-- Hero End -->
     </div>
+    <script src="./app.js"></script>
+    <script src="./autotyping.js"></script>
   </body>
 </html>

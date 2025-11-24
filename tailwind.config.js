@@ -15,6 +15,9 @@ module.exports = {
       fontFamily: {
         roboto: ["Roboto", "sans-serif"],
       },
+      spacing: {
+        hero: "100px",
+      },
     },
   },
   plugins: [],
