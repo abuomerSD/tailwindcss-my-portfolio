@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Eltayeb Ibrahim - FullStack Developer</title>
+  </head>
+  <body>
+    <!-- First Screen -->
+    <div class="h-screen bg-linear-to-b from-indigo-50 to-blue-200">
+      <!-- Navbar -->
+      <div class="bg-white h-20 flex justify-center items-center sticky z-10">
+        <nav class="container mx-auto flex justify-between items-center">
+          <h3 class="text-2xl">ELTAYEB's PORTFOLIO</h3>
+          <ul class="hidden md:flex gap-3">
+            <li class="text-gray-500 hover:text-gray-400 font-semibold">
+              <a href="#home">HOME</a>
+            </li>
+            <li class="text-gray-500 hover:text-gray-400 font-semibold">
+              <a href="#about">ABOUT ME</a>
+            </li>
+            <li class="text-gray-500 hover:text-gray-400 font-semibold">
+              <a href="#skills">SKILLS</a>
+            </li>
+            <li class="text-gray-500 hover:text-gray-400 font-semibold">
+              <a href="#porfolio">PORTFOLIO</a>
+            </li>
+            <li class="text-gray-500 hover:text-gray-400 font-semibold">
+              <a href="#contact">CONTACT</a>
+            </li>
+          </ul>
+          <!-- darkmode image -->
+          <div class="hidden cursor-pointer md:block">
+            <img class="w-6" src="./images/moon.png" alt="img" />
+          </div>
+          <!-- Hamburger -->
+          <div
+            id="hamburger"
+            class="flex flex-col gap-1 md:hidden cursor-pointer group transition duration-150 z-20"
+          >
+            <div class="h-0.5 w-5 bg-gray-600 group-hover:bg-gray-400"></div>
+            <div class="h-0.5 w-5 bg-gray-600 group-hover:bg-gray-400"></div>
+            <div class="h-0.5 w-5 bg-gray-600 group-hover:bg-gray-400"></div>
+          </div>
+          <!-- Drop Down Menu -->
+          <div
+            class="absolute top-0 left-0 z-10 bg-indigo-400 w-full h-72 flex justify-center items-center rounded-b-2xl"
+          >
+            <ul class="flex flex-col gap-3">
+              <li class="text-gray-200 hover:text-gray-50 font-semibold">
+                <a href="#home">HOME</a>
+              </li>
+              <li class="text-gray-200 hover:text-gray-50 font-semibold">
+                <a href="#about">ABOUT ME</a>
+              </li>
+              <li class="text-gray-200 hover:text-gray-50 font-semibold">
+                <a href="#skills">SKILLS</a>
+              </li>
+              <li class="text-gray-200 hover:text-gray-50 font-semibold">
+                <a href="#porfolio">PORTFOLIO</a>
+              </li>
+              <li class="text-gray-200 hover:text-gray-50 font-semibold">
+                <a href="#contact">CONTACT</a>
+              </li>
+              <li>
+                <!-- darkmode image -->
+                <div class="cursor-pointer flex justify-center">
+                  <img
+                    class="w-6 mx-auto -translate-x-1"
+                    src="./images/moon.png"
+                    alt="img"
+                  />
+                </div>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </body>
+</html>
