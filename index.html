@@ -33,9 +33,6 @@
               <a href="#about">ABOUT ME</a>
             </li>
             <li class="text-gray-500 hover:text-gray-400 font-semibold">
-              <a href="#skills">SKILLS</a>
-            </li>
-            <li class="text-gray-500 hover:text-gray-400 font-semibold">
               <a href="#porfolio">PORTFOLIO</a>
             </li>
             <li class="text-gray-500 hover:text-gray-400 font-semibold">
@@ -76,9 +73,6 @@
           </li>
           <li class="text-gray-200 hover:text-gray-50 font-semibold">
             <a href="#about">ABOUT ME</a>
-          </li>
-          <li class="text-gray-200 hover:text-gray-50 font-semibold">
-            <a href="#skills">SKILLS</a>
           </li>
           <li class="text-gray-200 hover:text-gray-50 font-semibold">
             <a href="#porfolio">PORTFOLIO</a>
@@ -162,9 +156,7 @@
 
         <!-- right -->
         <div class="flex flex-col gap-3">
-          <h3 class="mt-15 text-lg font-semibold text-indigo-600 md:lg">
-            ABOUT ME
-          </h3>
+          <h3 class="mt-15 text-lg font-semibold text-indigo-600">ABOUT ME</h3>
           <p class="text-gray-500">
             Full Stack Developer with a strong backend focus, experienced in
             building scalable web applications using Node.js, Express.js, MySQL,
@@ -196,6 +188,103 @@
       </div>
 
       <!-- About End -->
+
+      <!-- Portfolio Start -->
+      <div
+        class="mt-20 w-5/6 mx-auto flex flex-col gap-3 justify-center"
+        id="portfolio"
+      >
+        <h3 class="mt-15 text-lg font-semibold text-indigo-600 text-center">
+          PORTFOLIO
+        </h3>
+        <h1 class="text-2xl text-center">Works & Projects</h1>
+        <p class="text-gray-500 text-justify">
+          I help businesses, startups, and creative professionals turn their
+          ideas into functional and efficient web applications. Powered by
+          Node.js, Vue.js, I transform requirements into scalable, well-crafted
+          digital solutions.
+        </p>
+        <!-- projects -->
+        <div
+          class="mt-10 flex flex-col gap-3 md:flex md:flex-row md:gap-3 md:flex-wrap"
+        >
+          <!-- shalfa project card -->
+          <div class="w-full relative cursor-pointer group md:w-1/3">
+            <img src="./images/shalfa.png" alt="shalfa image" class="w-full" />
+            <!-- overlay -->
+            <div
+              class="absolute inset-0 bg-black/50 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+            >
+              <a
+                class="bg-indigo-600 hover:bg-indigo-500 px-4 py-2 rounded-md text-white cursor-pointer"
+                href="https://github.com/abuomerSD/store-app"
+                target="_blank"
+              >
+                Github
+              </a>
+            </div>
+          </div>
+          <!-- project card -->
+          <div class="w-full relative cursor-pointer group md:w-1/3">
+            <img src="./images/shalfa.png" alt="shalfa image" class="w-full" />
+            <!-- overlay -->
+            <div
+              class="absolute inset-0 bg-black/50 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+            >
+              <a
+                class="bg-indigo-600 hover:bg-indigo-500 px-4 py-2 rounded-md text-white cursor-pointer"
+                href="https://github.com/abuomerSD/store-app"
+                target="_blank"
+              >
+                Github
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Portfolio End -->
+
+      <!-- Contact Start -->
+      <div
+        class="mt-20 flex flex-col gap-3 justify-center items-center w-5/6 mx-auto"
+      >
+        <h3 class="mt-15 text-lg font-semibold text-indigo-600 text-center">
+          CONTACT
+        </h3>
+        <h1 class="text-2xl text-center">Have a Question?</h1>
+        <p class="text-gray-500 text-justify">
+          Do you have an idea? Let's discuss it and see what we can do together.
+        </p>
+        <div class="flex flex-col gap-3 w-full md:w-1/2">
+          <input
+            class="p-2 border-2 border-gray-300 rounded-md"
+            type="text"
+            placeholder="Name"
+          />
+          <input
+            class="p-2 border-2 border-gray-300 rounded-md"
+            type="text"
+            placeholder="Email"
+          />
+          <textarea
+            class="p-2 border-2 border-gray-300 rounded-md"
+            name="message"
+            id="message"
+            placeholder="Message"
+            rows="8"
+          ></textarea>
+          <button
+            class="bg-indigo-600 px-4 py-2 rounded-md text-white hover:bg-indigo-500 cursor-pointer"
+          >
+            Send
+          </button>
+        </div>
+      </div>
+      <!-- Contact End -->
+
+      <!-- Footer Start -->
+
+      <!-- Footer End -->
     </div>
     <script src="./app.js"></script>
     <script src="./autotyping.js"></script>
