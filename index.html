@@ -215,29 +215,18 @@
             <div
               class="absolute inset-0 bg-black/50 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300"
             >
-              <a
-                class="bg-indigo-600 hover:bg-indigo-500 px-4 py-2 rounded-md text-white cursor-pointer"
-                href="https://github.com/abuomerSD/store-app"
-                target="_blank"
-              >
-                Github
-              </a>
-            </div>
-          </div>
-          <!-- project card -->
-          <div class="w-full relative cursor-pointer group md:w-1/3">
-            <img src="./images/shalfa.png" alt="shalfa image" class="w-full" />
-            <!-- overlay -->
-            <div
-              class="absolute inset-0 bg-black/50 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-            >
-              <a
-                class="bg-indigo-600 hover:bg-indigo-500 px-4 py-2 rounded-md text-white cursor-pointer"
-                href="https://github.com/abuomerSD/store-app"
-                target="_blank"
-              >
-                Github
-              </a>
+              <div class="flex flex-col justify-center items-center m-3">
+                <a
+                  class="w-1/4 bg-indigo-600 hover:bg-indigo-500 px-4 py-2 rounded-md text-white cursor-pointer"
+                  href="https://github.com/abuomerSD/store-app"
+                  target="_blank"
+                >
+                  Github
+                </a>
+                <h3 class="text-white font-bold text-lg">
+                  Shalfa.Cloud Inventory Management Website
+                </h3>
+              </div>
             </div>
           </div>
         </div>
@@ -255,16 +244,30 @@
         <p class="text-gray-500 text-justify">
           Do you have an idea? Let's discuss it and see what we can do together.
         </p>
-        <div class="flex flex-col gap-3 w-full md:w-1/2">
+
+        <form
+          class="flex flex-col gap-3 w-full md:w-1/2"
+          action="https://api.web3forms.com/submit"
+          method="POST"
+        >
+          <input
+            type="hidden"
+            name="access_key"
+            value="8d9e49b6-766e-4e5d-bf32-0a64d6b425a3"
+          />
           <input
             class="p-2 border-2 border-gray-300 rounded-md"
             type="text"
             placeholder="Name"
+            name="name"
+            required
           />
           <input
             class="p-2 border-2 border-gray-300 rounded-md"
             type="text"
             placeholder="Email"
+            name="email"
+            required
           />
           <textarea
             class="p-2 border-2 border-gray-300 rounded-md"
@@ -272,18 +275,39 @@
             id="message"
             placeholder="Message"
             rows="8"
+            name="message"
+            required
           ></textarea>
           <button
             class="bg-indigo-600 px-4 py-2 rounded-md text-white hover:bg-indigo-500 cursor-pointer"
+            type="submit"
           >
             Send
           </button>
-        </div>
+        </form>
       </div>
       <!-- Contact End -->
 
       <!-- Footer Start -->
-
+      <div class="mt-20 h-1/12 bg-blue-950 flex items-center justify-center">
+        <div
+          class="container mx-auto flex justify-center items-center md:justify-between"
+        >
+          <div class="text-white hidden md:block">ELTAYEB's PORTFOLIO</div>
+          <p class="text-white hidden md:block">
+            © 2025. Design by Eltayeb Ibrahim.
+          </p>
+          <div class="flex justify-center items-center gap-0">
+            <a href="https://www.linkedin.com/in/eltayeb-ibrahim/">
+              <img
+                class="w-3/6"
+                src="./images/linkedin.png"
+                alt="linkedin logo"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
       <!-- Footer End -->
     </div>
     <script src="./app.js"></script>
