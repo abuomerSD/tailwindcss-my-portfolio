@@ -18,3 +18,30 @@ function toggleNavbar() {
     dropdown.classList.remove("flex", "justify-center", "items-center");
   }
 }
+
+// darkmode toggle
+
+function toggleDarkMode() {
+  document.body.classList.toggle("dark");
+
+  //save theme to local storage
+  if (document.body.classList.contains("dark")) {
+    localStorage.setItem("theme", "dark");
+  } else {
+    localStorage.setItem("theme", "light");
+  }
+
+  if (!dropdown.classList.contains("hidden")) {
+    dropdown.classList.toggle("hidden");
+  }
+}
+
+// set theme on page load
+
+document.addEventListener("DOMContentLoaded", () => {
+  const theme = localStorage.getItem("theme");
+
+  if (theme === "dark") {
+    document.body.classList.add("dark");
+  }
+});

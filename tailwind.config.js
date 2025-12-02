@@ -1,4 +1,3 @@
-/** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./index.html", "./src/**/*.{html,js,ts,jsx,tsx,vue}"],
   theme: {
@@ -11,6 +10,7 @@ module.exports = {
         primary: "#1E40AF",
         secondary: "#9333EA",
         accent: "#F97316",
+        bgWhite: "#EEE",
       },
       fontFamily: {
         roboto: ["Roboto", "sans-serif"],
